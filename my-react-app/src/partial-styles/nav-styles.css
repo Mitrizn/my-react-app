@@ -1,0 +1,85 @@
+
+.header {
+  position: fixed;
+  display: flex;
+  flex: 1;
+  height: 5.5rem;
+  width: 100%;
+  background-color: black;
+  justify-content: center;
+  top: 0;
+  left: 0;
+  align-items: center;
+  z-index: 1;
+}
+
+@media (max-width: 50rem) {
+  .header {
+    flex-direction: column;
+    height:6rem;
+  }
+}
+
+.top-header-line,
+.bottom-header-line{
+  width: 100%;
+  max-width: 36rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+.options-text-margin{
+  display: flex;
+  width: 40rem; 
+  flex-direction: row;
+  justify-content:space-evenly;
+  flex-wrap: wrap;
+}
+
+.options-text{
+  color: white;
+  font-family: arial;
+  font-size: 1.2vw; 
+  font-weight: bold;
+}
+
+.drop-down {
+  position: relative;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  min-width: 16vw; 
+  z-index: 1;
+}
+
+.links {
+  color: black;
+  padding: 1.2vw 1.6vw; 
+  display: block;
+}
+
+.links:hover {
+  background-color: #ddd;
+}
+
+.drop-down:hover .dropdown-content {
+  display: block;
+}
+
+.about-me-layout {
+  margin-left: 3vw; 
+}
+
+.about-me-pic {
+  width: 5vw; 
+  border-radius: 100px;
+  background: transparent;
+}
