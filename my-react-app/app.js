@@ -19,8 +19,7 @@ app.use((req, res, next) => {
 });
 
 // MongoDB connection string
-const dbURI= 'mongodb+srv://netninja:test12345@nodetuts.8a1yc7r.mongodb.net/Kb-cust?retryWrites=true&w&maj';
-
+const dbURI= 'mongodb+srv://netninja:test12345@nodetuts.8a1yc7r.mongodb.net/Kb-cust?retryWrites=true&w=majority&appName=NodeTUTS';
 // Connecting to MongoDB
 mongoose.connect(dbURI)
   .then((result) => app.listen(5175)) // Listening to the server on successful connection
@@ -30,24 +29,24 @@ mongoose.connect(dbURI)
 app.use(morgan('dev'));
 
 // Route to test the creation of a new user
-app.get('/test', (req,res)=> {
+/* app.get('/test', (req,res)=> {
   const user= new User({
     firstName: 'DFAS',
     lastName: 'Maragh',
     email: 'dimitrimaragh@aol.com',
     phone:1234567,
     pass:10
-  }); 
+  }); */ 
 
   // Saving the user to the database
-  user.save()
+ /*  user.save()
     .then((result)=> {
       res.send(result)
     })
     .catch((err)=> {
       console.log(err);
     });
-}); 
+});  */
 
 // Middleware for serving static files from the React app
 app.use(express.static(path.join(__dirname, 'dist')));
@@ -62,7 +61,7 @@ app.get('*', (req, res) => {
 });
 
 // Route for getting all users
- app.get('/users', (req,res)=> {
+/*  app.get('/users', (req,res)=> {
   User.find()
     .then((result)=> {
       res.send(result);
@@ -70,7 +69,7 @@ app.get('*', (req, res) => {
     .catch((err)=> {
       console.log(err);
     });
-}); 
+});  */
 
 // Route for getting all members
 /* app.get('/members', (req,res)=> {
@@ -130,7 +129,7 @@ app.post('/vibes', (req,res)=> {
 });
 
 // Route for booking a class
-app.post('/bookClass', async (req, res) => {
+app.post('/bookclass', async (req, res) => {
   const { email, className } = req.body;
 
   try {

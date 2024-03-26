@@ -1,0 +1,32 @@
+.offerDesc {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin-bottom: 4rem;
+  padding: 1rem;
+}
+
+.offerMargin {
+  flex: 1;
+  border: 2px solid black;
+  border-radius: 7px;
+  box-shadow: 2px 5px 10px 3px rgba(0, 0, 0, 0.4);
+  text-align: center;
+  padding: 1rem;
+}
+
+/* Styles for offer headers */
+.offerHeader {
+  font-size: 2rem; /* Adjusted from '4vw' */
+  font-family: 'Enriqueta', serif;
+  color: #AF98DA;
+}
+
+/* Styles for offer descriptions */
+.offerDescMessage {
+  font-size: 1rem; /* Adjusted from '1vw' */
+  font-family: 'jockey one', serif;
+  margin-bottom: 2rem;
+}

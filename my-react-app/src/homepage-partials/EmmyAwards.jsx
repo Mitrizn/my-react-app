@@ -1,73 +1,74 @@
-
+// Importing image assets
 import workoutRopes from '../assets/michi-ropes.jpg';
 import kbLogo from '../assets/kb-logo.jpg';
 
+// EmmyAwards component
 function EmmyAwards() {
 
+  // Styles for the EmmyAwards component
   const styles = {
-  
-  layout: {
-    padding:'1rem',
-  },
-  homePicMargin: {
-    display: 'flex',
-    justifyContent: 'flex-end',
-    position: 'relative',
-    zIndex: 0,
-    width: '100%',
-    height: '50vw',
-    backgroundColor: '#AF98DA',
-    margin: 'auto',
-    marginTop: '8rem',
-  },
-  michiPic: {
-    height: '50vw',
-  },
-  emmySection: {
-    position: 'absolute',
-    top: '7vw',
-    left: '0px',
-    display: 'block',
-    textAlign: 'center',
-    width: '50vw',
-    height: '43vw',
-    backgroundColor: 'white',
-  },
-  kbLogoPic: {
-    width: '28vw',
-  },
-  kbLogoLayout: {
-    marginBottom: '-2vw',
-  },
-  emmyMention: {
-    fontFamily: 'Raleway, sans-serif',
-    fontWeight: 800,
-    fontSize: '2.7vw',
-    letterSpacing: '0.5vw',
-  },
-  emmyMentionMargin: {
-    marginBottom: '-2vw',
-  },
-  introEmmySec: {
-    fontFamily: 'Arial, Helvetica, sans-serif',
-    fontWeight: 'bold',
-    fontSize: '1.5vw',
-    lineHeight: '1.8em',
-    letterSpacing: '0em',
-  },
-  introEmmyMargin: {
-    marginBottom: '-0.4vw',
-  },
-  bookClass: {
-    backgroundColor: '#AF98DA',
-    color: 'white',
-    padding: '1vw',
-    border: 'none',
-    fontSize: '1.4vw',
-    fontFamily: 'Heebo, sans-serif',
-    fontWeight: 700,
-    cursor: 'pointer',
-  },
+    layout: {
+      padding:'1rem',
+    },
+    homePicMargin: {
+      display: 'flex',
+      justifyContent: 'flex-end',
+      position: 'relative',
+      zIndex: 0,
+      width: '100%',
+      height: '50vw',
+      backgroundColor: '#AF98DA',
+      margin: 'auto',
+      marginTop: '8rem',
+    },
+    michiPic: {
+      height: '50vw',
+    },
+    emmySection: {
+      position: 'absolute',
+      top: '7vw',
+      left: '0px',
+      display: 'block',
+      textAlign: 'center',
+      width: '50vw',
+      height: '43vw',
+      backgroundColor: 'white',
+    },
+    kbLogoPic: {
+      width: '28vw',
+    },
+    kbLogoLayout: {
+      marginBottom: '-2vw',
+    },
+    emmyMention: {
+      fontFamily: 'Raleway, sans-serif',
+      fontWeight: 800,
+      fontSize: '2.7vw',
+      letterSpacing: '0.5vw',
+    },
+    emmyMentionMargin: {
+      marginBottom: '-2vw',
+    },
+    introEmmySec: {
+      fontFamily: 'Arial, Helvetica, sans-serif',
+      fontWeight: 'bold',
+      fontSize: '1.5vw',
+      lineHeight: '1.8em',
+      letterSpacing: '0em',
+    },
+    introEmmyMargin: {
+      marginBottom: '-0.4vw',
+    },
+    bookClass: {
+      backgroundColor: '#AF98DA',
+      color: 'white',
+      padding: '1vw',
+      border: 'none',
+      fontSize: '1.4vw',
+      fontFamily: 'Heebo, sans-serif',
+      fontWeight: 700,
+      cursor: 'pointer',
+    },
   };
 
   return (
@@ -107,4 +108,5 @@ function EmmyAwards() {
   );
 }
 
+// Exporting the EmmyAwards component as default
 export default EmmyAwards;
